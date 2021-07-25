@@ -1,0 +1,923 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/compac/ontologies/2021/5/untitled-ontology-4"
+     xml:base="http://www.semanticweb.org/compac/ontologies/2021/5/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontologia="http://www.centrocomercial.com/ontologia#">
+    <owl:Ontology rdf:about="http://www.centrocomercial.com/ontologia"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#acessivelPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.centrocomercial.com/ontologia#acessivelPor">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Andar"/>
+        <rdfs:range rdf:resource="http://www.centrocomercial.com/ontologia#EntradaESaida"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#armazena -->
+
+    <owl:ObjectProperty rdf:about="http://www.centrocomercial.com/ontologia#armazena">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Carrinho_de_Compras"/>
+        <rdfs:range rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#ficaNoAndar -->
+
+    <owl:ObjectProperty rdf:about="http://www.centrocomercial.com/ontologia#ficaNoAndar">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Bloco"/>
+        <rdfs:range rdf:resource="http://www.centrocomercial.com/ontologia#Andar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#ficaNoBloco -->
+
+    <owl:ObjectProperty rdf:about="http://www.centrocomercial.com/ontologia#ficaNoBloco">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+        <rdfs:range rdf:resource="http://www.centrocomercial.com/ontologia#Bloco"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#gera -->
+
+    <owl:ObjectProperty rdf:about="http://www.centrocomercial.com/ontologia#gera">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Ordem_Servico"/>
+        <rdfs:range rdf:resource="http://www.centrocomercial.com/ontologia#Carrinho_de_Compras"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#oferece -->
+
+    <owl:ObjectProperty rdf:about="http://www.centrocomercial.com/ontologia#oferece">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <rdfs:range rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#possui -->
+
+    <owl:ObjectProperty rdf:about="http://www.centrocomercial.com/ontologia#possui">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Cliente"/>
+        <rdfs:range rdf:resource="http://www.centrocomercial.com/ontologia#Carrinho_de_Compras"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#seLocalizaEm -->
+
+    <owl:ObjectProperty rdf:about="http://www.centrocomercial.com/ontologia#seLocalizaEm">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <rdfs:range rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#atividade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#atividade">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Farmácia</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Livraria</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Pet</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Supermercado</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#categoria -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#categoria">
+        <owl:equivalentProperty rdf:resource="http://www.centrocomercial.com/ontologia#interesse"/>
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Beleza</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>CD</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>DVD</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Decoração</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Informática</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Jardinagem</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Livro</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>Pet</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#corredor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#corredor">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#cpf -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#cpf">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Cliente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#data_pagamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#data_pagamento">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Ordem_Servico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#descrição -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#descrição">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#e-mail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#e-mail">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Cliente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#forma_pagamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#forma_pagamento">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Ordem_Servico"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Boleto</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Cartão de Crédito</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Cartão de Débito</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#id">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#id_local -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#id_local">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#id_ordem_servico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#id_ordem_servico">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Ordem_Servico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#imagem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#imagem">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#interesse -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#interesse">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Cliente"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Beleza</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>CD</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>DVD</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Decoração</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Informática</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Jardinagem</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Livro</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>Pet</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#nome -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#nome">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Cliente"/>
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#numero_de_banheiros -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#numero_de_banheiros">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Bloco"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#preço -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#preço">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#quantidade_estoque -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#quantidade_estoque">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#rotuloAndar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#rotuloAndar">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Andar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#rotuloBloco -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#rotuloBloco">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Bloco"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#site -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#site">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#tamanho -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#tamanho">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment>tamanho em metros quadrados</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#telefone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#telefone">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#tipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#tipo">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#EntradaESaida"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>elevador</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>escada</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>escada-rolante</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>portão</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#valor_total -->
+
+    <owl:DatatypeProperty rdf:about="http://www.centrocomercial.com/ontologia#valor_total">
+        <rdfs:domain rdf:resource="http://www.centrocomercial.com/ontologia#Carrinho_de_Compras"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Andar -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#Andar"/>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Bloco -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#Bloco"/>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Carrinho_de_Compras -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#Carrinho_de_Compras"/>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Cliente -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#Cliente"/>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#EntradaESaida -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#EntradaESaida"/>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Localização -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#Localização"/>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Loja -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#Loja"/>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Mercadoria -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#Mercadoria">
+        <rdfs:subClassOf rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Ordem_Servico -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#Ordem_Servico"/>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Produto -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#Produto"/>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Serviço -->
+
+    <owl:Class rdf:about="http://www.centrocomercial.com/ontologia#Serviço">
+        <rdfs:subClassOf rdf:resource="http://www.centrocomercial.com/ontologia#Produto"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Abbey_Road -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Abbey_Road">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Mercadoria"/>
+        <ontologia:categoria rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;CD&quot;</ontologia:categoria>
+        <ontologia:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</ontologia:id>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CD Abbey Road - The Beatles</ontologia:nome>
+        <ontologia:preço rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R$ 20,00</ontologia:preço>
+        <ontologia:quantidade_estoque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</ontologia:quantidade_estoque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Assassinato_no_Expresso_Oriente -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Assassinato_no_Expresso_Oriente">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Mercadoria"/>
+        <ontologia:id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</ontologia:id>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assasinato no Expresso Oriente</ontologia:nome>
+        <ontologia:preço rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R$ 19,99</ontologia:preço>
+        <ontologia:quantidade_estoque rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</ontologia:quantidade_estoque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Box_Dom_Quixote -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Box_Dom_Quixote">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Mercadoria"/>
+        <ontologia:descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Box Dom Quixote de La Mancha, Vol I e II. Escrito por Miguel de Cervantes</ontologia:descrição>
+        <ontologia:id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</ontologia:id>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Box Dom Quixote de La Mancha</ontologia:nome>
+        <ontologia:preço rdf:datatype="http://www.w3.org/2001/XMLSchema#double">99.99</ontologia:preço>
+        <ontologia:quantidade_estoque rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5.0</ontologia:quantidade_estoque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Farmácia_SP -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Farmácia_SP">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <ontologia:atividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farmácia</ontologia:atividade>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farmácia SP</ontologia:nome>
+        <ontologia:site rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.farmasp.com</ontologia:site>
+        <ontologia:telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11)3333-3333</ontologia:telefone>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Leonardo_Negri -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Leonardo_Negri">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Cliente"/>
+        <ontologia:cpf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">00000000000</ontologia:cpf>
+        <ontologia:e-mail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lcnegri@usp.br</ontologia:e-mail>
+        <ontologia:interesse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jardinagem</ontologia:interesse>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leonardo Coelho Negri</ontologia:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Livraria_Galáxia -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Livraria_Galáxia">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <ontologia:seLocalizaEm rdf:resource="http://www.centrocomercial.com/ontologia#local0010"/>
+        <ontologia:atividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Livraria</ontologia:atividade>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Livraria Galáxia&quot;</ontologia:nome>
+        <ontologia:site rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.livrariagalaxia.com</ontologia:site>
+        <ontologia:telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11)1111-1111</ontologia:telefone>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Livraria_Souza -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Livraria_Souza">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <ontologia:atividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Livraria</ontologia:atividade>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Livraria Souza&quot;</ontologia:nome>
+        <ontologia:site rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.livrariasouza.com</ontologia:site>
+        <ontologia:telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11)2222-2222</ontologia:telefone>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Lucas_Moreira -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Lucas_Moreira">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Cliente"/>
+        <ontologia:cpf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11111111111</ontologia:cpf>
+        <ontologia:e-mail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lucas_moreira@usp.br</ontologia:e-mail>
+        <ontologia:interesse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Livro</ontologia:interesse>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucas Moreira</ontologia:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Lucas_Tamaribuchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Lucas_Tamaribuchi">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Cliente"/>
+        <ontologia:cpf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22222222222</ontologia:cpf>
+        <ontologia:e-mail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lutamaribuchi@usp.br</ontologia:e-mail>
+        <ontologia:interesse rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pet</ontologia:interesse>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lucas Tamaribuchi</ontologia:nome>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Pet_Shop_Cão_e_Gato -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Pet_Shop_Cão_e_Gato">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <ontologia:atividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pet</ontologia:atividade>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pet Shop Cão e Gato</ontologia:nome>
+        <ontologia:site rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.caoegato.com.br</ontologia:site>
+        <ontologia:telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11)4444-4444</ontologia:telefone>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Ração_NutriMais -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Ração_NutriMais">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Mercadoria"/>
+        <ontologia:categoria>pet</ontologia:categoria>
+        <ontologia:descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ração para cachorro 3kg</ontologia:descrição>
+        <ontologia:id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</ontologia:id>
+        <ontologia:quantidade_estoque rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</ontologia:quantidade_estoque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Supermercado_Brasil -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Supermercado_Brasil">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Loja"/>
+        <ontologia:atividade rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supermercado</ontologia:atividade>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supermercado Brasil</ontologia:nome>
+        <ontologia:site rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.superbrasil.com</ontologia:site>
+        <ontologia:telefone rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(11)5555-5555</ontologia:telefone>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#Xampu_Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#Xampu_Apple">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Mercadoria"/>
+        <ontologia:categoria rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beleza</ontologia:categoria>
+        <ontologia:descrição rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xampu 350ml</ontologia:descrição>
+        <ontologia:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</ontologia:id>
+        <ontologia:nome rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xampu Apple 350ml</ontologia:nome>
+        <ontologia:preço rdf:datatype="http://www.w3.org/2001/XMLSchema#double">19.9</ontologia:preço>
+        <ontologia:quantidade_estoque rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</ontologia:quantidade_estoque>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#andar00 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#andar00">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Andar"/>
+        <ontologia:acessivelPor rdf:resource="http://www.centrocomercial.com/ontologia#es000000"/>
+        <ontologia:rotuloAndar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andar 00</ontologia:rotuloAndar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#andar01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#andar01">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Andar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#andar02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#andar02">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Andar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#bloco0000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#bloco0000">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Bloco"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#bloco0001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#bloco0001">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Bloco"/>
+        <ontologia:ficaNoAndar rdf:resource="http://www.centrocomercial.com/ontologia#andar00"/>
+        <ontologia:rotuloBloco rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bloco 0001</ontologia:rotuloBloco>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#bloco0002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#bloco0002">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Bloco"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#bloco0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#bloco0101">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Bloco"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#bloco0104 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#bloco0104">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Bloco"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#bloco0203 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#bloco0203">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Bloco"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#es000000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#es000000">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#EntradaESaida"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#es010100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#es010100">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#EntradaESaida"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#es010400 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#es010400">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#EntradaESaida"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#es020300 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#es020300">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#EntradaESaida"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#local0000 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#local0000">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#local0010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#local0010">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+        <ontologia:ficaNoBloco rdf:resource="http://www.centrocomercial.com/ontologia#bloco0001"/>
+        <ontologia:id_local rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0010</ontologia:id_local>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#local0012 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#local0012">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#local0097 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#local0097">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#local0100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#local0100">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.centrocomercial.com/ontologia#local0301 -->
+
+    <owl:NamedIndividual rdf:about="http://www.centrocomercial.com/ontologia#local0301">
+        <rdf:type rdf:resource="http://www.centrocomercial.com/ontologia#Localização"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

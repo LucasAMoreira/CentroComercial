@@ -1,0 +1,1222 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.centrocomercial.com/ontologia"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.centrocomercial.com/ontologia">
+    <Prefix name="" IRI="http://www.semanticweb.org/compac/ontologies/2021/5/untitled-ontology-4"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ontologia" IRI="http://www.centrocomercial.com/ontologia#"/>
+    <Declaration>
+        <Class IRI="#Andar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bloco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carrinho_de_Compras"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cliente"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EntradaESaida"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Localização"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Loja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mercadoria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ordem_Servico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serviço"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#acessivelPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#armazena"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ficaNoAndar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ficaNoBloco"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#gera"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#oferece"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possui"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#seLocalizaEm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#atividade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#categoria"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#corredor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cpf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#data_pagamento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descrição"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#e-mail"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#forma_pagamento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id_entrada_saida"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id_local"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id_ordem_servico"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#imagem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#interesse"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nome"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numero_de_banheiros"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#preço"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#quantidade_estoque"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rotuloAndar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rotuloBloco"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#site"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tamanho"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#telefone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#valor_total"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abbey_Road"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Assassinato_no_Expresso_Oriente"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Box_Dom_Quixote"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Farmácia_SP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leonardo_Negri"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Livraria_Galáxia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Livraria_Souza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lucas_Moreira"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lucas_Tamaribuchi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pet_Shop_Cão_e_Gato"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ração_NutriMais"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Supermercado_Brasil"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xampu_Apple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#andar00"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#andar01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#andar02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bloco0000"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bloco0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bloco0002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bloco0101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bloco0104"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bloco0203"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#es000000"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#es000101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#es000200"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#es010100"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#es010400"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#es020300"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#local0000"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#local0010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#local0012"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#local0097"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#local0100"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#local0301"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Mercadoria"/>
+        <Class IRI="#Produto"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Serviço"/>
+        <Class IRI="#Produto"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Mercadoria"/>
+        <NamedIndividual IRI="#Abbey_Road"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mercadoria"/>
+        <NamedIndividual IRI="#Assassinato_no_Expresso_Oriente"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mercadoria"/>
+        <NamedIndividual IRI="#Box_Dom_Quixote"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Loja"/>
+        <NamedIndividual IRI="#Farmácia_SP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cliente"/>
+        <NamedIndividual IRI="#Leonardo_Negri"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Loja"/>
+        <NamedIndividual IRI="#Livraria_Galáxia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Loja"/>
+        <NamedIndividual IRI="#Livraria_Souza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cliente"/>
+        <NamedIndividual IRI="#Lucas_Moreira"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cliente"/>
+        <NamedIndividual IRI="#Lucas_Tamaribuchi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Loja"/>
+        <NamedIndividual IRI="#Pet_Shop_Cão_e_Gato"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mercadoria"/>
+        <NamedIndividual IRI="#Ração_NutriMais"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Loja"/>
+        <NamedIndividual IRI="#Supermercado_Brasil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mercadoria"/>
+        <NamedIndividual IRI="#Xampu_Apple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Andar"/>
+        <NamedIndividual IRI="#andar00"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Andar"/>
+        <NamedIndividual IRI="#andar01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Andar"/>
+        <NamedIndividual IRI="#andar02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bloco"/>
+        <NamedIndividual IRI="#bloco0000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bloco"/>
+        <NamedIndividual IRI="#bloco0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bloco"/>
+        <NamedIndividual IRI="#bloco0002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bloco"/>
+        <NamedIndividual IRI="#bloco0101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bloco"/>
+        <NamedIndividual IRI="#bloco0104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bloco"/>
+        <NamedIndividual IRI="#bloco0203"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntradaESaida"/>
+        <NamedIndividual IRI="#es000000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntradaESaida"/>
+        <NamedIndividual IRI="#es000101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntradaESaida"/>
+        <NamedIndividual IRI="#es000200"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntradaESaida"/>
+        <NamedIndividual IRI="#es010100"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntradaESaida"/>
+        <NamedIndividual IRI="#es010400"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EntradaESaida"/>
+        <NamedIndividual IRI="#es020300"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Localização"/>
+        <NamedIndividual IRI="#local0000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Localização"/>
+        <NamedIndividual IRI="#local0010"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Localização"/>
+        <NamedIndividual IRI="#local0012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Localização"/>
+        <NamedIndividual IRI="#local0097"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Localização"/>
+        <NamedIndividual IRI="#local0100"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Localização"/>
+        <NamedIndividual IRI="#local0301"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seLocalizaEm"/>
+        <NamedIndividual IRI="#Farmácia_SP"/>
+        <NamedIndividual IRI="#local0012"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seLocalizaEm"/>
+        <NamedIndividual IRI="#Livraria_Galáxia"/>
+        <NamedIndividual IRI="#local0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seLocalizaEm"/>
+        <NamedIndividual IRI="#Livraria_Souza"/>
+        <NamedIndividual IRI="#local0097"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seLocalizaEm"/>
+        <NamedIndividual IRI="#Pet_Shop_Cão_e_Gato"/>
+        <NamedIndividual IRI="#local0301"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#seLocalizaEm"/>
+        <NamedIndividual IRI="#Supermercado_Brasil"/>
+        <NamedIndividual IRI="#local0100"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acessivelPor"/>
+        <NamedIndividual IRI="#andar00"/>
+        <NamedIndividual IRI="#es000000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acessivelPor"/>
+        <NamedIndividual IRI="#andar00"/>
+        <NamedIndividual IRI="#es000101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acessivelPor"/>
+        <NamedIndividual IRI="#andar00"/>
+        <NamedIndividual IRI="#es000200"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acessivelPor"/>
+        <NamedIndividual IRI="#andar01"/>
+        <NamedIndividual IRI="#es010100"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acessivelPor"/>
+        <NamedIndividual IRI="#andar01"/>
+        <NamedIndividual IRI="#es010400"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#acessivelPor"/>
+        <NamedIndividual IRI="#andar02"/>
+        <NamedIndividual IRI="#es020300"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ficaNoAndar"/>
+        <NamedIndividual IRI="#bloco0001"/>
+        <NamedIndividual IRI="#andar00"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ficaNoAndar"/>
+        <NamedIndividual IRI="#bloco0002"/>
+        <NamedIndividual IRI="#andar00"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ficaNoAndar"/>
+        <NamedIndividual IRI="#bloco0101"/>
+        <NamedIndividual IRI="#andar01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ficaNoAndar"/>
+        <NamedIndividual IRI="#bloco0104"/>
+        <NamedIndividual IRI="#andar01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ficaNoAndar"/>
+        <NamedIndividual IRI="#bloco0203"/>
+        <NamedIndividual IRI="#andar02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ficaNoBloco"/>
+        <NamedIndividual IRI="#local0010"/>
+        <NamedIndividual IRI="#bloco0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ficaNoBloco"/>
+        <NamedIndividual IRI="#local0012"/>
+        <NamedIndividual IRI="#bloco0104"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ficaNoBloco"/>
+        <NamedIndividual IRI="#local0097"/>
+        <NamedIndividual IRI="#bloco0203"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ficaNoBloco"/>
+        <NamedIndividual IRI="#local0100"/>
+        <NamedIndividual IRI="#bloco0002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ficaNoBloco"/>
+        <NamedIndividual IRI="#local0301"/>
+        <NamedIndividual IRI="#bloco0101"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#categoria"/>
+        <NamedIndividual IRI="#Abbey_Road"/>
+        <Literal>&quot;CD&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Abbey_Road"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Abbey_Road"/>
+        <Literal>CD Abbey Road - The Beatles</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#preço"/>
+        <NamedIndividual IRI="#Abbey_Road"/>
+        <Literal>R$ 20,00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantidade_estoque"/>
+        <NamedIndividual IRI="#Abbey_Road"/>
+        <Literal>10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Assassinato_no_Expresso_Oriente"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Assassinato_no_Expresso_Oriente"/>
+        <Literal>Assasinato no Expresso Oriente</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#preço"/>
+        <NamedIndividual IRI="#Assassinato_no_Expresso_Oriente"/>
+        <Literal>R$ 19,99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantidade_estoque"/>
+        <NamedIndividual IRI="#Assassinato_no_Expresso_Oriente"/>
+        <Literal>5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descrição"/>
+        <NamedIndividual IRI="#Box_Dom_Quixote"/>
+        <Literal>Box Dom Quixote de La Mancha, Vol I e II. Escrito por Miguel de Cervantes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Box_Dom_Quixote"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Box_Dom_Quixote"/>
+        <Literal>Box Dom Quixote de La Mancha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#preço"/>
+        <NamedIndividual IRI="#Box_Dom_Quixote"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">99.99</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantidade_estoque"/>
+        <NamedIndividual IRI="#Box_Dom_Quixote"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#atividade"/>
+        <NamedIndividual IRI="#Farmácia_SP"/>
+        <Literal>Farmácia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Farmácia_SP"/>
+        <Literal>Farmácia SP</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#site"/>
+        <NamedIndividual IRI="#Farmácia_SP"/>
+        <Literal>www.farmasp.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefone"/>
+        <NamedIndividual IRI="#Farmácia_SP"/>
+        <Literal>(11)3333-3333</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpf"/>
+        <NamedIndividual IRI="#Leonardo_Negri"/>
+        <Literal>00000000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#e-mail"/>
+        <NamedIndividual IRI="#Leonardo_Negri"/>
+        <Literal>lcnegri@usp.br</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#interesse"/>
+        <NamedIndividual IRI="#Leonardo_Negri"/>
+        <Literal>Jardinagem</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Leonardo_Negri"/>
+        <Literal>Leonardo Coelho Negri</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#atividade"/>
+        <NamedIndividual IRI="#Livraria_Galáxia"/>
+        <Literal>Livraria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Livraria_Galáxia"/>
+        <Literal>&quot;Livraria Galáxia&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#site"/>
+        <NamedIndividual IRI="#Livraria_Galáxia"/>
+        <Literal>www.livrariagalaxia.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefone"/>
+        <NamedIndividual IRI="#Livraria_Galáxia"/>
+        <Literal>(11)1111-1111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#atividade"/>
+        <NamedIndividual IRI="#Livraria_Souza"/>
+        <Literal>Livraria</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Livraria_Souza"/>
+        <Literal>&quot;Livraria Souza&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#site"/>
+        <NamedIndividual IRI="#Livraria_Souza"/>
+        <Literal>www.livrariasouza.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefone"/>
+        <NamedIndividual IRI="#Livraria_Souza"/>
+        <Literal>(11)2222-2222</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpf"/>
+        <NamedIndividual IRI="#Lucas_Moreira"/>
+        <Literal>11111111111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#e-mail"/>
+        <NamedIndividual IRI="#Lucas_Moreira"/>
+        <Literal>lucas_moreira@usp.br</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#interesse"/>
+        <NamedIndividual IRI="#Lucas_Moreira"/>
+        <Literal>Livro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Lucas_Moreira"/>
+        <Literal>Lucas Moreira</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#cpf"/>
+        <NamedIndividual IRI="#Lucas_Tamaribuchi"/>
+        <Literal>22222222222</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#e-mail"/>
+        <NamedIndividual IRI="#Lucas_Tamaribuchi"/>
+        <Literal>lutamaribuchi@usp.br</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#interesse"/>
+        <NamedIndividual IRI="#Lucas_Tamaribuchi"/>
+        <Literal>Pet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Lucas_Tamaribuchi"/>
+        <Literal>Lucas Tamaribuchi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#atividade"/>
+        <NamedIndividual IRI="#Pet_Shop_Cão_e_Gato"/>
+        <Literal>Pet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Pet_Shop_Cão_e_Gato"/>
+        <Literal>Pet Shop Cão e Gato</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#site"/>
+        <NamedIndividual IRI="#Pet_Shop_Cão_e_Gato"/>
+        <Literal>www.caoegato.com.br</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefone"/>
+        <NamedIndividual IRI="#Pet_Shop_Cão_e_Gato"/>
+        <Literal>(11)4444-4444</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#categoria"/>
+        <NamedIndividual IRI="#Ração_NutriMais"/>
+        <Literal>pet</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descrição"/>
+        <NamedIndividual IRI="#Ração_NutriMais"/>
+        <Literal>Ração para cachorro 3kg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Ração_NutriMais"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantidade_estoque"/>
+        <NamedIndividual IRI="#Ração_NutriMais"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#atividade"/>
+        <NamedIndividual IRI="#Supermercado_Brasil"/>
+        <Literal>Supermercado</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Supermercado_Brasil"/>
+        <Literal>Supermercado Brasil</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#site"/>
+        <NamedIndividual IRI="#Supermercado_Brasil"/>
+        <Literal>www.superbrasil.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#telefone"/>
+        <NamedIndividual IRI="#Supermercado_Brasil"/>
+        <Literal>(11)5555-5555</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#categoria"/>
+        <NamedIndividual IRI="#Xampu_Apple"/>
+        <Literal>Beleza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#descrição"/>
+        <NamedIndividual IRI="#Xampu_Apple"/>
+        <Literal>Xampu 350ml</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id"/>
+        <NamedIndividual IRI="#Xampu_Apple"/>
+        <Literal>5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Xampu_Apple"/>
+        <Literal>Xampu Apple 350ml</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#preço"/>
+        <NamedIndividual IRI="#Xampu_Apple"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">19.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#quantidade_estoque"/>
+        <NamedIndividual IRI="#Xampu_Apple"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rotuloAndar"/>
+        <NamedIndividual IRI="#andar00"/>
+        <Literal>Térreo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rotuloAndar"/>
+        <NamedIndividual IRI="#andar01"/>
+        <Literal>Primeiro andar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rotuloAndar"/>
+        <NamedIndividual IRI="#andar02"/>
+        <Literal>Segundo andar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rotuloBloco"/>
+        <NamedIndividual IRI="#bloco0001"/>
+        <Literal>Bloco 0001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rotuloBloco"/>
+        <NamedIndividual IRI="#bloco0002"/>
+        <Literal>Bloco 0002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rotuloBloco"/>
+        <NamedIndividual IRI="#bloco0101"/>
+        <Literal>Bloco 0101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rotuloBloco"/>
+        <NamedIndividual IRI="#bloco0104"/>
+        <Literal>Bloco 0104</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rotuloBloco"/>
+        <NamedIndividual IRI="#bloco0203"/>
+        <Literal>Bloco 0203</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_entrada_saida"/>
+        <NamedIndividual IRI="#es000000"/>
+        <Literal>es000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo"/>
+        <NamedIndividual IRI="#es000000"/>
+        <Literal>portão</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_entrada_saida"/>
+        <NamedIndividual IRI="#es000101"/>
+        <Literal>es000101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo"/>
+        <NamedIndividual IRI="#es000101"/>
+        <Literal>escada-rolante</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_entrada_saida"/>
+        <NamedIndividual IRI="#es000200"/>
+        <Literal>es000200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo"/>
+        <NamedIndividual IRI="#es000200"/>
+        <Literal>elevador</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_entrada_saida"/>
+        <NamedIndividual IRI="#es010100"/>
+        <Literal>es010100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo"/>
+        <NamedIndividual IRI="#es010100"/>
+        <Literal>escada-rolante</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_entrada_saida"/>
+        <NamedIndividual IRI="#es010400"/>
+        <Literal>es010400</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo"/>
+        <NamedIndividual IRI="#es010400"/>
+        <Literal>elevador</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_entrada_saida"/>
+        <NamedIndividual IRI="#es020300"/>
+        <Literal>es020300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tipo"/>
+        <NamedIndividual IRI="#es020300"/>
+        <Literal>escada-rolante</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_local"/>
+        <NamedIndividual IRI="#local0010"/>
+        <Literal>0010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_local"/>
+        <NamedIndividual IRI="#local0012"/>
+        <Literal>0012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_local"/>
+        <NamedIndividual IRI="#local0097"/>
+        <Literal>0097</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_local"/>
+        <NamedIndividual IRI="#local0100"/>
+        <Literal>0100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#id_local"/>
+        <NamedIndividual IRI="#local0301"/>
+        <Literal>0301</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#acessivelPor"/>
+        <Class IRI="#Andar"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#armazena"/>
+        <Class IRI="#Carrinho_de_Compras"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ficaNoAndar"/>
+        <Class IRI="#Bloco"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ficaNoBloco"/>
+        <Class IRI="#Localização"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#gera"/>
+        <Class IRI="#Ordem_Servico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#oferece"/>
+        <Class IRI="#Loja"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possui"/>
+        <Class IRI="#Cliente"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#seLocalizaEm"/>
+        <Class IRI="#Loja"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#acessivelPor"/>
+        <Class IRI="#EntradaESaida"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#armazena"/>
+        <Class IRI="#Produto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ficaNoAndar"/>
+        <Class IRI="#Andar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ficaNoBloco"/>
+        <Class IRI="#Bloco"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#gera"/>
+        <Class IRI="#Carrinho_de_Compras"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#oferece"/>
+        <Class IRI="#Produto"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possui"/>
+        <Class IRI="#Carrinho_de_Compras"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#seLocalizaEm"/>
+        <Class IRI="#Localização"/>
+    </ObjectPropertyRange>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#categoria"/>
+        <DataProperty IRI="#interesse"/>
+    </EquivalentDataProperties>
+    <DataPropertyDomain>
+        <DataProperty IRI="#atividade"/>
+        <Class IRI="#Loja"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#categoria"/>
+        <Class IRI="#Produto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#corredor"/>
+        <Class IRI="#Localização"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cpf"/>
+        <Class IRI="#Cliente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#data_pagamento"/>
+        <Class IRI="#Ordem_Servico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descrição"/>
+        <Class IRI="#Produto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#e-mail"/>
+        <Class IRI="#Cliente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#forma_pagamento"/>
+        <Class IRI="#Ordem_Servico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <Class IRI="#Produto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id_entrada_saida"/>
+        <Class IRI="#EntradaESaida"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id_local"/>
+        <Class IRI="#Localização"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id_ordem_servico"/>
+        <Class IRI="#Ordem_Servico"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#imagem"/>
+        <Class IRI="#Produto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#interesse"/>
+        <Class IRI="#Cliente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome"/>
+        <Class IRI="#Cliente"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome"/>
+        <Class IRI="#Loja"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nome"/>
+        <Class IRI="#Produto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numero_de_banheiros"/>
+        <Class IRI="#Bloco"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#preço"/>
+        <Class IRI="#Produto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#quantidade_estoque"/>
+        <Class IRI="#Produto"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rotuloAndar"/>
+        <Class IRI="#Andar"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rotuloBloco"/>
+        <Class IRI="#Bloco"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#site"/>
+        <Class IRI="#Loja"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tamanho"/>
+        <Class IRI="#Localização"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#telefone"/>
+        <Class IRI="#Loja"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipo"/>
+        <Class IRI="#EntradaESaida"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#valor_total"/>
+        <Class IRI="#Carrinho_de_Compras"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#atividade"/>
+        <DataOneOf>
+            <Literal>Farmácia</Literal>
+            <Literal>Livraria</Literal>
+            <Literal>Pet</Literal>
+            <Literal>Supermercado</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#categoria"/>
+        <DataOneOf>
+            <Literal>Beleza</Literal>
+            <Literal>CD</Literal>
+            <Literal>DVD</Literal>
+            <Literal>Decoração</Literal>
+            <Literal>Informática</Literal>
+            <Literal>Jardinagem</Literal>
+            <Literal>Livro</Literal>
+            <Literal>Pet</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#corredor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cpf"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#data_pagamento"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descrição"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#e-mail"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#forma_pagamento"/>
+        <DataOneOf>
+            <Literal>Boleto</Literal>
+            <Literal>Cartão de Crédito</Literal>
+            <Literal>Cartão de Débito</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id_entrada_saida"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id_local"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id_ordem_servico"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#imagem"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#interesse"/>
+        <DataOneOf>
+            <Literal>Beleza</Literal>
+            <Literal>CD</Literal>
+            <Literal>DVD</Literal>
+            <Literal>Decoração</Literal>
+            <Literal>Informática</Literal>
+            <Literal>Jardinagem</Literal>
+            <Literal>Livro</Literal>
+            <Literal>Pet</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numero_de_banheiros"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#preço"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#quantidade_estoque"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rotuloAndar"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rotuloBloco"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#site"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tamanho"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#telefone"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipo"/>
+        <DataOneOf>
+            <Literal>elevador</Literal>
+            <Literal>escada</Literal>
+            <Literal>escada-rolante</Literal>
+            <Literal>portão</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#valor_total"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tamanho</IRI>
+        <Literal>tamanho em metros quadrados</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
