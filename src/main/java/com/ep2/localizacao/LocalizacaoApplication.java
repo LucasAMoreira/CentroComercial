@@ -163,16 +163,19 @@ public class LocalizacaoApplication {
 	
 	//Recebe uma instância loja e devolve sua localização como JSON
 	@GetMapping("/local")
-	public String local(@RequestParam(value = "loja", defaultValue = "Livraria_Galáxia") String loja) {
+	public String local(@RequestParam(value = "loja", defaultValue = "Livraria Galáxia") String loja) {
 		
+			loja=loja.replaceFirst(" ", "_");
+			
 			String resposta="";
 												
 			String consulta =
 					"PREFIX EP2: <http://www.centrocomercial.com/ontologia#>"
-					+ "SELECT ?idlocal ?rotuloBloco ?rotuloAndar ?corredor "
+					+ "SELECT ?idlocal ?rotuloBloco ?rotuloAndar ?corredor ?nome "
 					+ "WHERE {"
 					+ "?loja a EP2:Loja."
 					+ "?loja EP2:seLocalizaEm ?local."
+					//+ "?loja EP2:nome ?nome."
 					+ "?local EP2:id_local ?idlocal."
 					+ "?local EP2:corredor ?corredor."
 					+ "?local EP2:ficaNoBloco ?bloco."
