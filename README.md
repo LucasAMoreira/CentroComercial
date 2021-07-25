@@ -32,7 +32,7 @@ Bloco
 
 Essa lógica se repete para nomearmos os corredores.
 
-# Ferramentas
+## Ferramentas
 
-Desenvolvido com o framework Jena e com o Spring Boot.
-Para determinarmos a localização de uma loja usamos sua nomenclatura.
+- Desenvolvido com o framework Jena e com o Spring Boot.
+- Para determinarmos a localização de uma loja usamos sua nomenclatura.
