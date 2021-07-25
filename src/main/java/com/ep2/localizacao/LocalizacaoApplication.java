@@ -39,12 +39,36 @@ public class LocalizacaoApplication {
 
 	}
 	
+	public String retornaDirecao(String bloco) {
+		if(bloco.equalsIgnoreCase("01")) {
+			bloco="primeira (1º)";
+			return bloco;
+		}
+		if(bloco.equalsIgnoreCase("02")) {
+			bloco="segunda (2º)";
+			return bloco;
+		}
+		if(bloco.equalsIgnoreCase("03")) {
+			bloco="terceira (3º)";
+			return bloco;
+		}
+		if(bloco.equalsIgnoreCase("04")) {
+			bloco="quarta (4º)";
+			return bloco;
+		}
+		return bloco;
+	}
+	
+	
 	//Recebe corredor e retorna detalhes de como chegar
 	public String retornaCaminho(String corredor) {
 		String caminho = "";
 		
 		String andar = corredor.substring(9,11);
 		String bloco = corredor.substring(11);
+
+		bloco = retornaDirecao(bloco);
+		
 
 		//Se for no térreo só manda ir ao corredor
 		if(andar.equalsIgnoreCase("00")) {			
@@ -71,6 +95,9 @@ public class LocalizacaoApplication {
 		
 		String andar = corredor.substring(9,11);
 		String bloco = corredor.substring(11);
+		
+		bloco = retornaDirecao(bloco);
+
 
 		//Se for no térreo só manda ir ao corredor
 		if(andar.equalsIgnoreCase("00")) {			
