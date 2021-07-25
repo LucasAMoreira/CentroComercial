@@ -192,7 +192,7 @@ public class LocalizacaoApplication {
 	@GetMapping("/local")
 	public String local(@RequestParam(value = "loja", defaultValue = "Livraria Galáxia") String loja) {
 		
-			loja=loja.replaceFirst(" ", "_");
+			loja=loja.replaceAll(" ", "_");
 			
 			String resposta="";
 												
