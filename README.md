@@ -21,14 +21,14 @@ http://localhost:8080/local?loja=nome_da_loja
 
 es: entrada e saída
 
--dois primeiros digitos: andar
--dois digitos do meio: bloco
--dois digitos finais: id
+- Dois primeiros digitos: andar
+- Dois digitos do meio: bloco
+- Dois digitos finais: id
 
 Bloco
 
--dois primeiros digitos: andar
--dois digitos do meio: id
+- Dois primeiros digitos: andar
+- Dois digitos do meio: id
 
 Essa lógica se repete para nomearmos os corredores.
 
