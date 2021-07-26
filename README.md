@@ -10,11 +10,11 @@ No terminal digite:
 
 No navegador:
 
-http://localhost:8080/local
+http://localhost:8090/local
 
 ## Selecionando local de loja
 
-http://localhost:8080/local?loja=nome_da_loja
+http://localhost:8090/local?loja=nome_da_loja
 
 
 ## Nomenclatura
