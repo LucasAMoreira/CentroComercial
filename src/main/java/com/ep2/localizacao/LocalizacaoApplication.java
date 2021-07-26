@@ -14,10 +14,12 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.tdb.TDBFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins="http://localhost:8090")
 @SpringBootApplication
 @RestController
 public class LocalizacaoApplication {
@@ -189,6 +191,7 @@ public class LocalizacaoApplication {
 	
 	
 	//Recebe uma instância loja e devolve sua localização como JSON
+	
 	@GetMapping("/local")
 	public String local(@RequestParam(value = "loja", defaultValue = "Livraria Galáxia") String loja) {
 		
