@@ -28,7 +28,7 @@ es: entrada e saída
 Bloco
 
 - Dois primeiros digitos: andar
-- Dois digitos do meio: id
+- Dois digitos finais: id
 
 Essa lógica se repete para nomearmos os corredores.
 
